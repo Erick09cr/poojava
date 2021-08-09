@@ -42,6 +42,17 @@ public class Vehiculo {
         JOptionPane.showMessageDialog(null, "El modelo del taxi es:"+taxi.modelo);
         JOptionPane.showMessageDialog(null, "El odometro del taxi es:"+taxi.odometro);
         
+        Vehiculo bus = new Vehiculo(); 
+        taxi.color = JOptionPane.showInputDialog("Digite el color");
+        taxi.marca = JOptionPane.showInputDialog("Digite la marca");
+        taxi.modelo = JOptionPane.showInputDialog("Digite el modelo");
+        taxi.odometro = Integer.parseInt(JOptionPane.showInputDialog("Digite el odometro"));
+        
+        
+        JOptionPane.showMessageDialog(null, "El color del bus es:"+bus.color);
+        JOptionPane.showMessageDialog(null, "La marca del bus es:"+bus.marca);
+        JOptionPane.showMessageDialog(null, "El modelo del bus es:"+bus.modelo);
+        JOptionPane.showMessageDialog(null, "El odometro del bus es:"+bus.odometro);
     }
     
 }
